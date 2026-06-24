@@ -104,6 +104,89 @@ Video chat applications - A
 Bank - C
 
 
+Lamport Logical Clock
+~~~~~~~~~~~~~~~~~~~~~~
+
+
+*******************************************************************************************************************************************************************
+Scalability
+~~~~~~~~~~~~~~~~
+
+1. Vertical Scaling
+pros:
+easy implementation
+less power supply
+management is easy
+
+cons:
+single point of failure
+limit
+price
+
+2. Horizontal Scaling
+pros:
+it overcomes cons of vertical scalability
+
+cons:
+pros of horizontal 
+
+
+
+Replication vs Redundancy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Redundancy 
+It is simply the duplication of nodes or components so that when a node or component fails,
+the duplication node is available to service customers.
+
+Active Redundancy is considered when each unit is operating/active and responding to the action. 
+Multiple nodes are connected to a load balancer, and each unit receives an equal load.
+
+Passive Redundancy is considered when one node is active or operational and the other is not operating. 
+During the breakdown of the active node, the passive node maintains availability by becoming the active node.
+
+
+Replication:
+redundancy + synchronization
+1. active
+2. passive
+
+every read - write -> mastr
+if master goes down one slave becomes master
+
+Master-slave replication can be either synchronous or asynchronous. 
+The difference is simply the timing of propagation of changes. If the changes are made to the master
+and slave at the same time, it is synchronous.
+If changes are queued up and written later, it is asynchronous.
+
+
+Load Balancer
+~~~~~~~~~~~~~~~~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
