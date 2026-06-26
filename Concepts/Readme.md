@@ -162,6 +162,44 @@ If changes are queued up and written later, it is asynchronous.
 Load Balancer
 ~~~~~~~~~~~~~~~~~~
 
+Roles of Load Balancer
+~~~~~~~~~~~~~~~~~~~~~~~~
+1. Load distribution is equal over every node.
+2. Health check (if node is not operational, request is passed to another)
+3. Ensures high scalability, high throughput, high availability
+
+In monolithic or in case of vertically scaled system, load balancer not needed
+In microservice architecture, we need it
+
+
+Challenges of Load Balancing
+1. Single Poiint of Failure
+
+
+Advantages of Load Balancers:
+1. Optimisation
+2. Better User Experience
+3. Prevents Downtime
+4. Flexibility
+5. Scalability
+6. Redundancy
+
+
+Load Balancing Algorithms:
+1. Round Robin (Static)
+    rotation fashion
+2. Weighted Round RObin (Static)
+    It is similar to ROund RObin when the servers are of different capacities. some node can have better resources, others might not have
+3. IP Hash Algorithm (Static)
+    The servers have almost equal capacity, and the hash function (input is source IP) is used for random or unbiased distribution of requests to the nodes.
+4. Source IP Hash (Static)
+    It combines the server and client's source and destination IP address to produce a hash key.
+    The key can be used to determine the request distribution
+5. Least Connection Algorithm (Dynamic)
+    Client requests are distributed to the application server with the least number of active connections at the time the 
+    client request is received.
+6. Least Response Time (Dynamic)
+    The request id distributed based on the server which has the least response time
 
 
 
