@@ -215,6 +215,56 @@ When to use:
 2. static content
 
 
+Cache Eviction Techniques
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1. LRU
+Least Recently Used
+2. MRU
+Most Recently Used
+3. LFU
+4. FIFO
+5. LIFO
+6. RR
+Random Replacement
+
+
+*******************************************************************************************************************************************************************
+File-Based storage System
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+File Based Database Managment System
+DBMS
+
+Here data is stored in form of files
+
+Challenges:
+1. Data Redundancy
+2. Poor Security
+3. Slow
+
+
+RDBMS
+~~~~~~~~~~~~~~~
+A software that performs data operations on relational database
+Operations include store, manage, query and retrieve data.
+Data is represented in form of tables.
+The relationship bw two tables is represented by foreign keys.
+
+Advantages:
+1. No data redundancy and inconsistency
+2. Data concurrency
+3. Data searching
+4. Data Integrity
+
+
+Problems:
+1. Rigid schema
+2. high cost
+3. Scalability issues
+(horizontal scaling or sharding is very difficult)
+
+
+Types of NoSQL Databases
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
