@@ -265,6 +265,37 @@ Problems:
 
 Types of NoSQL Databases
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+NoSQL Databases
+~~~~~~~~~~~~~~~~~~~~~~
+non-sql database
+it is a non-relational database
+
+
+NoSQL is the umbrella term comprising of four different types of databases
+1. key value db 
+ key value database generally used for caching
+  eg: redis
+2. Document db 
+ Brings best of both RDBMS and NoSQL
+ It combines relationship concept from RDBMS and dynamic schema and horizontal scalinf from NoSQL databases.
+ eg: MongoDB
+3. Columnar db
+  The colums are stored together instead of rows.
+  Because of that, the aggregation in such databases is rapid. It is widely used for Data analysis.
+  eg: cassandra
+4. Graph db
+  it represents and stores entities and relationships in form of graph data structure.
+  It is majorly used for social networks.
+
+
+Cart - redis
+Score card - redis
+Machine Learning - columnar  , cassandra
+Payment - we want high consistency, we us relational db like oracle
+
+
+Polyglot Persistence
+~~~~~~~~~~~~~~~~~~~~~
 
 
 
