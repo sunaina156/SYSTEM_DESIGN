@@ -202,6 +202,19 @@ Load Balancing Algorithms:
     The request id distributed based on the server which has the least response time
 
 
+Caching
+~~~~~~~~~~~~~~~~~~~
+Two cache:
+1. In memory/local cache
+ex: memcache
+2. Distributed or extended cache
+ex: redis
+
+When to use:
+1. read - intensive
+2. static content
+
+
 
 
 
