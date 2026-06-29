@@ -301,6 +301,68 @@ using multiple databases
 
 Denormalization in RDBMS
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+Normalization:
+Putting data in multiple tables to avoid redundancy
+
+Denormalization:
+It combines the data and organizes it in a single table. 
+Denormalization is process of adding redundant data to the normalized relational database o optimize its performance.
+
+Benefits of denormalization:
+1. faster data read operations
+2. Management convenience
+3. High data availability
+4. Reduces the no. of network calls to fetch data from multiple places
+
+Challenges of denormalization:
+1. Redundant data -> wastage of memory
+2. It increases complexity
+3. Data inconsistency
+4. It will cause slow write operations since we will need to write places due to redundancy
+
+
+How does Indexing work in Databases
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+Indexing creates a lookup table with the column and the pointer to the memory location of the row, containing this column.
+
+B-trees data structure is used to store the indexing as it is a multilevel format of tree-based indexing, which has balanced binary search trees.
+
+
+Synchronization
+~~~~~~~~~~~~~~~~~~~~
+blocking call
+
+Industrial use cases:
+1. Stock market
+2. Bank payments
+3. Ticket Booking
+4. Real time decision making
+
+Asynchronous Comunication
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+Non-blocking call
+
+
+*******************************************************************************************************************************************************************
+Message Based Communication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Client sends request in form of message
+receives response in form of message
+It is async, so client is not required to halt the process and wait for the process.
+
+
+P2P Model
+Publish Subscribe Model
+
+
+eg: kafka, RabbitMQ
+
+
+Web Server
+~~~~~~~~~~~~~~~
+ Tools or programs that help keep the web application always up and running.
+
+
 
 
 
