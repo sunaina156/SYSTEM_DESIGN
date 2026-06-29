@@ -296,6 +296,11 @@ Payment - we want high consistency, we us relational db like oracle
 
 Polyglot Persistence
 ~~~~~~~~~~~~~~~~~~~~~
+using multiple databases
+
+
+Denormalization in RDBMS
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
