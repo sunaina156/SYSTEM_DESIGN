@@ -363,6 +363,177 @@ Web Server
  Tools or programs that help keep the web application always up and running.
 
 
+Communication Protocol in Computer Network
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+These protocols can be implemented using hardware, software or a combination of both.
+
+Models:
+1. Push
+The client opens the connection with the server and keep it always active
+The server pushes new events to the client. This method reduces the server load.
+2. Pull / Polling
+Client requests, server respond
+3. Long Polling
+CLient requests, server keep it open until it gives response
+disadvantages:
+- ordering issue
+- server will always busy
+4. Socket
+When we need continuous frequent connections
+A socket is an endpoint of a two-way connection link bw two servers/nodes over the network
+5. Server sent events
+Clint subscries to the server "stream" and the server will send a message ("stream of events") to the client until the server or client closes the stream.
+one way connection
+long-lived connection
+
+
+*******************************************************************************************************************************************************************
+Client, Server
+
+What is required for communication to happen:
+1. language independent
+2. fast
+3. enable communication over the network
+4. light weighted
+
+
+REST
+REpresentational State Transfer
+A technique/ style/ standard to provide those requirements
+
+
+                          HTTP verb
+Create              POST  
+Read                 GET
+Update             PUT
+Delete              DELETE
+
+
+REST API - URI + HTTP verb
+
+
+SOA
+~~~~~~~~~~~
+Service Oriented Architecture
+
+It is a style of architecture that promotes loose coupling and granular applications
+to make the components of the software reusable.
+
+Advantages:
+1. Selective Scaling
+2. Different teck stacks
+3. Loose coupling
+4. Agile
+
+Disadvantages:
+1. Higher latency
+2. Complex to secure
+3. Cascading failures
+4. Complex understanding
+
+
+Microservices Architecture
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+It is an evolved version of SOA that promotes software components to be loosely coupled.
+It is the most granulated type of architecture and every service is completely independent of the other.
+
+
+SOA       
+- Services can share data storage
+- less scalable architecture
+- Deployment is time-consuming
+- Focused on maximizes application service reusability
+
+Microservices
+- Each microservice has separate and independent data storage
+- highly scalable architecture
+- Deployment is easy and less time-consuming
+- More focused on decoupling
+
+
+Tier Architecture
+~~~~~~~~~~~~~~~~~~~~~
+A web application can be designed according to the n-tier architeture where tiers are different layers of architecture.
+A tier is a logical separation bw different components of the application.
+
+Tier architecture helps make modifications and updation of different components easy. It helps in assigning dedicated tasks and roles to each component.
+
+*******************************************************************************************************************************************************************
+Authentication and Authorization
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Authentication
+who are you?
+
+Authorization
+what can you do?
+
+
+Basic Authentication
+~~~~~~~~~~~~~~~~~~~~~~
+Basic Authentication
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+Client                                    App
+               ---------------------->
+                 register
+              <-----------------------
+               username & password
+
+               ------------------------>
+               username & password
+               <-------------------------
+                    response
+
+               ------------------------>
+               username & password
+               <-------------------------
+                    response
+
+
+
+
+Token Based Authentication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+token will expire aftr specified time
+ex: bank websites
+
+client register username and password
+client login with username and password and gets token
+client gives token and get response from app
+client gives token and get response from app
+
+
+OAuth Authentication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+*******************************************************************************************************************************************************************
+Proxies
+
+A proxy server is a hardware or a piece of software that is placed between a client and an application to provide intermediary
+services in the communication.
+
+The proxy server provides a gateway between the user and the internet.
+
+
+Forward Proxy
+~~~~~~~~~~~~~~~~~~
+in this, server doesn't know the client
+
+Reverse Proxy
+~~~~~~~~~~~~~~~~
+Forward proxy hides the client
+Reverse proxy hides the server
+
+
+
+
+
+
+
+
+
 
 
 
